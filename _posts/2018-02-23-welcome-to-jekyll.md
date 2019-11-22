@@ -9,8 +9,7 @@ date: '2018-07-03 12:00:00'
 categories: [misc, html]
 
 intro_paragraph: '![](/assets/img/uploads/fc3d502c-fccf-489e-b0d7-214a71b912d1.jpeg)'
-categories: misc
->>>>>>> bf6d3e8e8c95d766a3be503fcab871ef6c64ec68
+
 ---
 You’ll find this post in your `_posts` directory. Go ahead and edit it and re-build the site to see your changes. You can rebuild the site in many different ways, but the most common way is to run `jekyll serve`, which launches a web server and auto-regenerates your site when a file is updated.
 
