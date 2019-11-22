@@ -2,9 +2,14 @@
 layout: default
 ---
 {% assign author = site.data.authors[page.author] %}
+<img src="{{ page.image }}">
 
 <h2>{{ page.title }}</h2>
-
+<ul id="blog-categories">
+  {% for category in page.categories %}
+  <li> <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category | upcase}}</a></li>
+  {% endfor %}
+</ul>
 <time datetime="{{ page.date }}">
   <small>
     <strong>{{ page.date | date_to_string }}</strong>
@@ -14,9 +19,15 @@ layout: default
   </small>
 </time>
 
-{% include page-intro.html %}
 
 {{ content }}
+
+{% if site.disqus.shortname %}
+  {% include disqus_comments.html %}
+{% endif %}
+
+
+
 
 <nav aria-label="Adjacent Posts">
   <ul>

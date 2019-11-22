@@ -2,20 +2,22 @@
 layout: default
 ---
 
-<h2>{{ page.title }}</h2>
-
-  {% include page-intro.html %}
-
-  {{ content }}
-
-  <section>
-
-    <h3>Recent posts from the blog</h3>
+  <h3>Recent Blog Posts!</h3>
+  <section class="home">
 
     <ul>
       {% for post in site.posts limit:3 %}
         <li>
+          <img src="{{ post.image }}">
           <a href="{{ post.url }}">{{ post.title }}</a>
+          <time datetime="{{ post.date }}">
+            <small>{{ post.date | date_to_string }}</small>
+          </time>
+          <section class="post-categories">
+            {% for category in post.categories %}
+              <li> <a href="{{site.baseurl}}/categories/#{{category|slugize}}">{{category | upcase}}</a></li>
+            {% endfor %}
+          </section>
         </li>
       {% endfor %}
     </ul>

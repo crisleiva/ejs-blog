@@ -1,6 +1,6 @@
 ---
 layout: blog
-title: The Blog
+title: My Blog 💖
 permalink: /blog
 section: blog
 intro_paragraph: >

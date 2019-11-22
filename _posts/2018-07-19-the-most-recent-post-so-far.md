@@ -2,7 +2,9 @@
 layout: post
 title: The most recent post so far
 author: john_doe
+image: /assets/img/gallery/apple3.jpg
 date: '2018-07-19 10:07:32'
+comments: true
 intro_paragraph: ''
 categories: misc
 ---
