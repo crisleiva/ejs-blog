@@ -6,9 +6,8 @@ comments: true
 featured: true
 image: /assets/img/gallery/apple5.jpg
 date: '2018-07-03 12:00:00'
-<<<<<<< HEAD
 categories: [misc, html]
-=======
+
 intro_paragraph: '![](/assets/img/uploads/fc3d502c-fccf-489e-b0d7-214a71b912d1.jpeg)'
 categories: misc
 >>>>>>> bf6d3e8e8c95d766a3be503fcab871ef6c64ec68
