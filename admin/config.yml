@@ -30,8 +30,8 @@ collections: # A list of collections the CMS should be able to edit
       - {label: "Images", name: "image", widget: "image", required: true}
       - {label: "Tags", name: "tags", widget: "string", required: false}
       - {label: "Date", name: "date", widget: "datetime", format: "YYYY-MM-DD"}
-      - {label: "Location", name: "location", widget: "string", required: "true"}
-      
+      - {label: "Location", name: "location", widget: "string", required: true}
+
   - name: "post" # Used in routes, ie.: /admin/collections/:slug/edit
     label: "Post" # Used in the UI, ie.: "New Post"
     folder: "_posts" # The path to the folder where the documents are stored
