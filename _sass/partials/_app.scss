@@ -161,16 +161,27 @@ html[data-current="contact"] main > form {
 .photo-gallery, .photo-gallery li {
   list-style: none;
   padding: 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 0 0 33%;
+  justify-content: space-between;
 }
 
 .photo-gallery li {
-  display: inline-block;
-  width: 33%;
+  display: flex;
+  justify-content: center;
+  height: 200px;
+  width: 200px;
+  box-shadow: 0 0 10px #333;
+  border-radius: 20px;
 }
 
 .photo-gallery li img {
+  align-self: center;
   padding: 5px;
-  width: 100%;
+  width: 170px;
+  height: 170px;
 }
 // reset CSS Grid fallbacks when they aren't required
 @supports (display: grid) {
@@ -220,7 +231,7 @@ footer {
       display: flex;
       flex-direction: column;
       img {
-        flex: 2.6;
+        height: 200px;
       }
     }
   }
@@ -242,7 +253,7 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  width: 50%;
+  width: 35%;
   > li {
     flex: 1;
     > a {
@@ -272,6 +283,28 @@ footer {
     h5 {
       font-size: 10px;
     }
+  }
+}
+
+.archive-group {
+  display: flex;
+  flex-direction: column;
+  article {
+    display: flex;
+    flex-direction: column;
+    max-width: 220px;
+    padding: 10px;
+    img {
+      width: 200px;
+      height: 200px;
+
+    }
+  }
+  .articles {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex: 1 0 33%;
   }
 }
 

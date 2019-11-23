@@ -17,7 +17,7 @@ collections: # A list of collections the CMS should be able to edit
     folder: "_photo_gallery"
     sort: "date:desc"
     create: true
-    slug: "{{slug}}-{{title}}"
+    slug: "{{slug}}"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "photo"}
       - {label: "Title", name: "title", widget: "string", tagname: "h1"}

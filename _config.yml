@@ -28,6 +28,7 @@ permalink: /:categories/:title/
 
 plugins:
   - jekyll-seo-tag
+  - jekyll-target-blank
   
 section: true
 
@@ -71,6 +72,7 @@ disqus:
 collections:
   photo_gallery:
     output: true
+    permalink: /photos/:title
 #include:
 #  - _redirects
 #  - _headers

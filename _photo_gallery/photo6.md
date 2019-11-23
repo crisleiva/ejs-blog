@@ -1,4 +1,4 @@
 ---
-image_path: /assets/img/gallery/apple6.jpg
+image: /assets/img/gallery/apple6.jpg
 title: Lemon Cake
 ---
