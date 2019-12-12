@@ -216,10 +216,12 @@ footer {
 // This handles the home pages recently added blogs
 
 .home {
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  ul {
+    ul {
+   
     display: flex;
     flex-direction: row;
     a {
@@ -307,4 +309,6 @@ footer {
     flex: 1 0 33%;
   }
 }
+
+
 
